@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'mixins';
 
+// NAVBAR
 .nav{
     background-color: $secondary-color;
     height: 60px;
@@ -31,18 +32,24 @@
 
         .search{
             input{
-                padding: 4px 0px 4px 0px;
+                padding: 4px 20px;
                 height: 36px;
                 width: 280px;
                 background-color: $primary-color;
                 border: none;
                 appearance: none;
                 outline: none;
+                border-radius: 10px;
 
                 &::placeholder{
-                    text-align: center;
                     font-size: 14px;
                     color: $third-text-color;
+                }
+
+                &:focus{
+                    &::placeholder{
+                        color: $primary-color;
+                    }
                 }
 
 
