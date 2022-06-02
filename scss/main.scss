@@ -1,0 +1,16 @@
+@import 'formalize';
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+
+.nav{
+    background-color: $secondary-color;
+    height: 53px;
+
+    &-content{
+        width: $container-width;
+        display: flex;
+        align-items: center;
+    }
+}
+
