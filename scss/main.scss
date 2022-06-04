@@ -2,11 +2,18 @@
 @import 'normalize';
 @import 'variables';
 @import 'mixins';
+@import 'global';
 @import 'layout/navigation';
 @import 'layout/sidebar';
 
+@font-face {
+    font-family: 'Segoe UI';
+    src: URL('../dist/font/SEGOEUI.TTF') format('truetype');
+  }
+
 body{
     background-color: $primary-color;
+    font-family: 'Segoe UI';
 }
 
 .margin-auto{
