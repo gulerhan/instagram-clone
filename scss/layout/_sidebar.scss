@@ -1,0 +1,56 @@
+.main-side-bar{
+    margin-top: 46px;
+    position: sticky;
+    top: 20px;
+    margin-left: auto;
+    width: $container-width - 614;
+
+    .switch{
+        display: flex;
+        gap: 21px;
+
+        img{
+            width: 56px;
+            height: 56px;
+            border-radius: 56px;
+        }
+
+        a{
+            margin-left: auto;
+        }
+    }
+
+    .suggestion{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .head{
+            display: flex;
+
+            p{
+                margin-left: auto;
+            }
+        }
+
+        .users{
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 32px;
+                }
+
+                a{
+                    margin-left: auto;
+                }
+            }
+        }
+
+    }
+}
