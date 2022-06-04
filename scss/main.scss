@@ -2,6 +2,8 @@
 @import 'normalize';
 @import 'variables';
 @import 'mixins';
+@import 'layout/navigation';
+@import 'layout/sidebar';
 
 body{
     background-color: $primary-color;
@@ -12,132 +14,9 @@ body{
     margin-right: auto;
 }
 
-// NAVBAR
-.nav{
-    background-color: $secondary-color;
-    height: 60px;
-    border-bottom: 1px solid rgb(216, 214, 214);
-
-    &-content{
-        padding: 9px 0px 8px;
-        width: $container-width;
-        @include flex(center,center,row,nowrap);
-        height: inherit;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    &-logo{
-        margin-right: auto;
-        img{
-            width: 103px;
-            height: 29px;
-        }
-    }
-
-    &-rigt-area{
-        @include flex(center,center,row,nowrap);
-        gap: 85px;
-
-        .search{
-            input{
-                padding: 4px 20px;
-                height: 36px;
-                width: 280px;
-                background-color: $primary-color;
-                border: none;
-                appearance: none;
-                outline: none;
-                border-radius: 10px;
-
-                &::placeholder{
-                    font-size: 14px;
-                    color: $third-text-color;
-                }
-
-                &:focus{
-                    &::placeholder{
-                        color: $primary-color;
-                    }
-                }
-
-
-            }
-        }
-
-        .icons{
-            @include flex(center,center,row,nowrap);
-            gap: 22px;
-            
-            img{
-                width: 22px;
-                height: 22px;
-                border-radius: 100%;
-            }
-        }
-    }
-}
-
 // MAIN
 .main{
     width: $container-width;
     @extend .margin-auto;
     display: flex;
-
-    &-side-bar{
-        margin-top: 46px;
-        position: sticky;
-        top: 20px;
-        margin-left: auto;
-        width: $container-width - 614;
-
-        .switch{
-            display: flex;
-            gap: 21px;
-
-            img{
-                width: 56px;
-                height: 56px;
-                border-radius: 56px;
-            }
-
-            a{
-                margin-left: auto;
-            }
-        }
-
-        .suggestion{
-            margin-top: 12px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-
-            .head{
-                display: flex;
-
-                p{
-                    margin-left: auto;
-                }
-            }
-
-            .users{
-                .user{
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-
-                    img{
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 32px;
-                    }
-
-                    a{
-                        margin-left: auto;
-                    }
-                }
-            }
-
-        }
-    }
 }
