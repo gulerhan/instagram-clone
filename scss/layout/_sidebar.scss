@@ -68,17 +68,19 @@
                 }
 
                 .user-info{
+                    a{
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $first-text-color;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    
                     p{
-
-                        &:nth-child(1){
-                            font-weight: 500;
-                            font-size: 14px;
-                        }
-
-                        &:nth-child(2){
-                            font-size: 12px;
-                            margin-top: 5px;
-                        }
+                        font-size: 12px;
+                        margin-top: 5px;
                     }
                 }
 
