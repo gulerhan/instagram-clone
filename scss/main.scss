@@ -1,0 +1,23 @@
+@import 'formalize';
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+
+body,html{
+    width: 100%;
+}
+
+body{
+    background-color: $primary-color;
+    font-family: 'Segoe UI';
+}
+
+// MAIN
+.main{
+    width: $container-width;
+    @extend .margin-auto;
+    display: flex;
+}
