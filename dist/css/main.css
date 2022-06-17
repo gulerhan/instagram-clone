@@ -319,14 +319,24 @@ template {
     }
 }
 
+@media (max-width: 425px) {
+    .nav-content {
+        width: auto;
+        padding: 0
+    }
+}
+
+
 .nav-logo {
     margin-right: auto
 }
 
 .nav-logo img {
     width: 103px;
-    height: 29px
+    height: 29px;
+    margin-top: 3px;
 }
+
 
 .nav-rigt-area {
     display: -webkit-box;
@@ -352,6 +362,7 @@ template {
         display: none
     }
 }
+
 
 .nav-rigt-area .search input {
     padding: 4px 20px;
@@ -425,6 +436,12 @@ template {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     gap: 22px
+}
+
+@media (max-width: 321px) {
+    .nav-rigt-area .icons {
+        gap: 12px;
+    }
 }
 
 .nav-rigt-area .icons img {
