@@ -595,7 +595,7 @@ body {
 
 /*# sourceMappingURL=main.css.map */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
 
 /* CSS Reset */
 *,
@@ -1473,6 +1473,42 @@ img {
 
     border: 1px solid var(--img-border);
     border-radius: 50%;
+}
+
+/* Messenger Page's Features */
+.messenger-body{
+    max-height: 1058px;
+    padding: 20px;
+    display: flex;
+    margin-top: 45px;
+    border: 1px solid var(--border);
+    max-width: inherit;
+}
+
+.messenger-left-side{
+    min-width: 350px;
+}
+
+.messenger-header{
+    display: flex;
+}
+
+.messenger-profile-name{
+    margin: auto;
+}
+
+.messenger-user-box{
+    display: flex;
+}
+
+.messenger-user-box img{
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+}
+
+.messenger-right-side{
+    max-width: 585px;
 }
 
 /* Media Queries */
