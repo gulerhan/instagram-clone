@@ -1,5 +1,5 @@
 // ----------Bottom Area Of The Side Bar-----------
-bottom.innerHTML = `© ${new Date().getFullYear()} INSTAGRAM FROM META`
+//bottom.innerHTML = `© ${new Date().getFullYear()} INSTAGRAM FROM META`
 
 
 const storiesContent = document.querySelector('.stories__content');
