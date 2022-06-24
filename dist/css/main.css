@@ -269,6 +269,19 @@ template {
     src: URL("../dist/font/SEGOEUI.TTF") format("truetype")
 }
 
+.m-8 {
+    margin-bottom: 8px;
+}
+
+
+.m-16 {
+    margin-bottom: 16px;
+}
+
+.m-24 {
+    margin-bottom: 24px;
+}
+
 .margin-auto,
 .main {
     margin-left: auto;
@@ -606,13 +619,13 @@ body {
     padding: 0;
 }
 
-*,
+/* *,
 button,
 input,
 select,
 textarea {
     font-family: 'Roboto', sans-serif;
-}
+} */
 
 /* Vars */
 :root {
@@ -1476,39 +1489,112 @@ img {
 }
 
 /* Messenger Page's Features */
-.messenger-body{
-    max-height: 1058px;
-    padding: 20px;
+.messenger-body {
+    max-height: 622px;
     display: flex;
     margin-top: 45px;
     border: 1px solid var(--border);
-    max-width: inherit;
+    width: inherit;
+    background-color: #FFF;
+    border-radius: 4px;
+    font-family: 'Segoe UI' !important;
 }
 
-.messenger-left-side{
-    min-width: 350px;
+.messenger-left-side {
+    width: 350px;
+    border-right: 1px solid var(--border);
 }
 
-.messenger-header{
+.messenger-header {
     display: flex;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
 }
 
-.messenger-profile-name{
+.messenger-header a {
+    color: #262626;
+}
+
+.messenger-header .fa-solid {
+    font-size: 22px;
+}
+
+.messenger-header span {
+    font-size: 16px;
+    margin-right: 6px;
+}
+
+.messenger-profile-name {
     margin: auto;
 }
 
-.messenger-user-box{
-    display: flex;
+.messenger-messages {
+    overflow-y: scroll;
+    max-height: 556px;
 }
 
-.messenger-user-box img{
+.messages-users {
+    margin-top: 8px;
+}
+
+.messenger-user-box {
+    display: flex;
+    padding: 8px 20px;
+    gap: 11px;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.messenger-user-box:hover {
+    background-color: #FAFAFA;
+}
+
+.messenger-user-box img {
     width: 56px;
     height: 56px;
     border-radius: 100px;
 }
 
-.messenger-right-side{
-    max-width: 585px;
+.user-message-info .message {
+    margin-top: 3px;
+}
+
+.messenger-right-side {
+    width: 585px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side-content {
+    text-align: center;
+}
+
+.right-side-content .circle {
+    border: 2.2px solid #262626;
+    width: 96px;
+    height: 96px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 6;
+    border-radius: 100px;
+}
+
+.right-side-content .circle img {
+    width: 48px;
+    height: 42px;
+}
+
+.right-side-content .text h3 {
+    font-weight: 350;
+    font-size: 22px;
+}
+
+.right-side-content .text p {
+    font-size: 14px;
+    color: #8E8E8E;
 }
 
 /* Media Queries */
