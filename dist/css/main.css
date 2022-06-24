@@ -266,20 +266,24 @@ template {
 
 @font-face {
     font-family: 'Segoe UI';
-    src: URL("../dist/font/SEGOEUI.TTF") format("truetype")
+    src: url("../font/SEGOEUI.TTF") format("truetype")
 }
 
-.m-8 {
+.mb-8 {
     margin-bottom: 8px;
 }
 
 
-.m-16 {
+.mb-16 {
     margin-bottom: 16px;
 }
 
-.m-24 {
+.mb-24 {
     margin-bottom: 24px;
+}
+
+.mb-36 {
+    margin-bottom: 30px;
 }
 
 .margin-auto,
@@ -1497,7 +1501,6 @@ img {
     width: inherit;
     background-color: #FFF;
     border-radius: 4px;
-    font-family: 'Segoe UI' !important;
 }
 
 .messenger-left-side {
@@ -1595,6 +1598,15 @@ img {
 .right-side-content .text p {
     font-size: 14px;
     color: #8E8E8E;
+}
+
+.right-side-content a {
+    background-color: #0095F6;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 600;
 }
 
 /* Media Queries */
